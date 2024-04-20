@@ -1,0 +1,136 @@
+body{
+    background-color: gray;
+    background-image: url('./hero-slider-2.jpg');
+}
+
+
+
+
+table {
+    width: 100%;
+}
+
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+/* tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+
+
+.status {
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.status.delivered {
+    background-color: #86e49d;
+    color: #006b21;
+}
+
+.status.cancelled {
+    background-color: #d893a3;
+    color: #b30021;
+}
+
+.status.pending {
+    background-color: #ebc474;
+}
+
+.status.shipped {
+    background-color: #6fcaea;
+}
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+@media (min-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+@media (max-width: 870px) {
+    td:not(:first-of-type) {
+        min-width: 11.1rem;
+        height: 10px;
+    }
+}
+
+th{
+    width: 22%;
+}
+
+th:nth-child(1){
+    width: 40vw;
+} */
+
+
+.icon-edit{
+    color: #006b21;
+    text-decoration: none;
+    padding: 0 .5rem;
+}
+.icon-delete{
+    color: #b30021;
+    text-decoration: none;
+    padding: 0 .5rem;
+}
+
+
+@media (max-width: 450px) {
+    td,th{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    td,th{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 290px) {
+    td,th{
+        font-size: 7px;
+    }
+}
