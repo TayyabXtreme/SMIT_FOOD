@@ -7,7 +7,7 @@ async function getAllorders() {
         .then((snap) => {
             console.log(snap.val())
             var data = Object.values(snap.val())
-            console.log(data)
+       
             for (var i = 0; i < data.length; i++) {
                 // console.log(data[i])
                 data[i]["status"] == "pending" ?
