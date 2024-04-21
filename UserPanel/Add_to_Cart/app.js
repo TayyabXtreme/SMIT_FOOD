@@ -68,3 +68,11 @@ function DeleteFromCart(e) {
     localStorage.setItem("add_to_card", JSON.stringify(add_to_Cart));
     getAllAddToCart();
 }
+
+
+if(localStorage.getItem("userId")==null){
+
+    window.location.replace("../../Auth/index.html")
+
+
+}

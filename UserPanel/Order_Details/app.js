@@ -43,3 +43,10 @@ function GetCurrentOrder(){
     })
 }
 GetCurrentOrder()
+
+if(localStorage.getItem("userId")==null){
+
+  window.location.replace("../../Auth/index.html")
+
+
+}
