@@ -16,12 +16,12 @@ async function getAllorders() {
             <div class="col col-lg-4"  style="margin-top:20px;">
             <div class="card"  style="background: none !important;border:1px solid gold !important">
                 <div class="card-body" style="background: none !important">
-                  <h5 class="card-title" style="color:white">Order No ${i + 1}</h5>
-                  <p class="card-text" style="color:white">Total Amount : ${data[i]["total_amount"]}</p>
-                  <p class="card-text" style="color:white">Status : ${data[i]["status"]}</p>
+                  <h5 class="card-title" style="color:white;text-align:center">Order No ${i + 1}</h5>
+                  <p class="card-text" style="color:white;text-align:center">Total Amount : ${data[i]["total_amount"]}</p>
+                  <p class="card-text" style="color:white;text-align:center">Status : ${data[i]["status"]}</p>
 
-                  <a href="#" class="btn btn-primary" id='${data[i]["orderKey"]}' onclick='ViewDetails(this)'>View Order Details</a>
-                  <a href="#" class="btn btn-danger" id='${data[i]["orderKey"]}' onclick='cancelOrder(this)'>Cancel order</a>
+                  <a href="#" class="btn " style="color:white" id='${data[i]["orderKey"]}' onclick='ViewDetails(this)'>View Order Details</a>
+                  <a href="#" class="btn " style="color:white" id='${data[i]["orderKey"]}' onclick='cancelOrder(this)'>Cancel order</a>
 
                 </div>
               </div>
@@ -34,12 +34,12 @@ async function getAllorders() {
             
             <div class="col col-lg-4"  style="margin-top:20px">
             <div class="card" style="background: none !important;border:1px solid gold !important;color:white">
-                <div class="card-body">
-                  <h5 class="card-title">Order No ${i + 1}</h5>
-                  <p class="card-text">Total Amount : ${data[i]["total_amount"]}</p>
-                  <p class="card-text">Status : ${data[i]["status"]}</p>
+                <div class="card-body" style="text-align:center">
+                  <h5 class="card-title;text-align:center">Order No ${i + 1}</h5>
+                  <p class="card-text;text-align:center">Total Amount : ${data[i]["total_amount"]}</p>
+                  <p class="card-text;text-align:center">Status : ${data[i]["status"]}</p>
 
-                  <a href="#" class="btn btn-primary" id='${data[i]["orderKey"]}' onclick='ViewDetails(this)'>View Order Details</a>
+                  <a href="#" class="btn" style="color:white" id='${data[i]["orderKey"]}' onclick='ViewDetails(this)'>View Order Details</a>
                 </div>
               </div>
         </div>

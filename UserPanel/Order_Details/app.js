@@ -12,22 +12,22 @@ function GetCurrentOrder(){
     .get()
     .then((snap)=>{
         console.log(snap.val())
-        username.innerText = "" + snap.val()["userName"]
-        price.innerText = "Total price : " + snap.val()["total_amount"]
-        statusoRDER.innerText = "Status " + snap.val()["status"]
+        // username.innerText = "" + snap.val()["userName"]
+        // price.innerText = "Total price : " + snap.val()["total_amount"]
+        // statusoRDER.innerText = "Status " + snap.val()["status"]
       
         for(var data of snap.val()["dishes"])
         {
             order_details.innerHTML+=`
             
-            <div class="col col-lg-4" style="width:334px;margin-bottom:15px" >
+            <div class="col col-lg-4" style="width:334px;margin-bottom:15px;font-size:1em" >
             <div class="card text-center" style="background:none !important;border:1px solid gold;color:white" >
             <img src=${data["dish_image"]} style="border-bottom:1px solid white">
             <div class="card-body">
-            <h5 class="card-title">Category  <span style="color:gold">${data["category_name"]} </span></h5>
-              <h5 class="card-title">Dish <span style="color:gold">${data["dish_name"]} </span></h5>
-              <p class="card-text"> Price : <span style="color:gold">${data["dish_price"]}</span></p>
-              <p class="card-text">Qunatity  <span style="color:gold">: ${data["quantity"]}</span></p>
+            <h5 class="card-title">Category  <span style="color:gold;display:inline-block">${data["category_name"]} </span></h5>
+              <h5 class="card-title">Dish <span style="color:gold;display:inline-block">${data["dish_name"]} </span></h5>
+              <p class="card-text"> Price : <span style="color:gold;display:inline-block">${data["dish_price"]}</span></p>
+              <p class="card-text">Qunatity  <span style="color:gold;display:inline-block">: ${data["quantity"]}</span></p>
     
               </div>
             </div>

@@ -43,9 +43,9 @@ async function SetDataForOrder(){
  
  //admin
   await firebase.database().ref(`allorders/${orderKey}`).set(orderobject)
-
-  window.location.reload()
-localStorage.setItem("add_to_card",[])
+  window.location.replace("../Home/index.html")
+ // window.location.href='../Home/index.html';
+  localStorage.setItem("add_to_card",[])
  
 
 

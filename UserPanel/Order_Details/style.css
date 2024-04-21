@@ -1,5 +1,6 @@
 body{
     background-image: url('./hero-slider-1.jpg');
+    height: 100vh;
 }
 
 
@@ -7,4 +8,8 @@ body{
 .row{
     flex-direction: column !important;
 }
+}
+
+#top{
+    height: 100vh !important;
 }
