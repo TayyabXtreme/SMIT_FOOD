@@ -22,7 +22,7 @@ function GetCurrentOrder(){
             
             <div class="col col-lg-4" style="width:334px;margin-bottom:15px;font-size:1em" >
             <div class="card text-center" style="background:none !important;border:1px solid gold;color:white" >
-            <img src=${data["dish_image"]} style="border-bottom:1px solid white">
+            <img src=${data["dish_image"]} style="border-bottom:1px solid white;height:300px;">
             <div class="card-body">
             <h5 class="card-title">Category  <span style="color:gold;display:inline-block">${data["category_name"]} </span></h5>
               <h5 class="card-title">Dish <span style="color:gold;display:inline-block">${data["dish_name"]} </span></h5>
