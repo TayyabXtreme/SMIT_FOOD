@@ -18,18 +18,21 @@ function GetCurrentOrder(){
         for(var data of snap.val()["dishes"])
         {
             order_details.innerHTML+=`
-            <div class="col col-lg-4" >
-            <div class="card text-center" >
-            <img src=${data["dish_image"]}>
-            <div class="card-body">
-            <h5 class="card-title">Category Name ${data["category_name"]} </h5>
-              <h5 class="card-title">Dish Name ${data["dish_name"]} </h5>
-              <p class="card-text">Dish Price : ${data["dish_price"]}</p>
-              <p class="card-text">Qunatity  : ${data["quantity"]}</p>
-    
-              </div>
+           
+
+
+          <div class="col col-lg-4" style="width:334px;margin-bottom:15px;font-size:1em" >
+          <div class="card text-center" style="background:none !important;border:1px solid gold;color:white" >
+          <img src=${data["dish_image"]} style="border-bottom:1px solid white;height:300px;">
+          <div class="card-body">
+          <h5 class="card-title">Category  <span style="color:gold;display:inline-block">${data["category_name"]} </span></h5>
+            <h5 class="card-title">Dish <span style="color:gold;display:inline-block">${data["dish_name"]} </span></h5>
+            <p class="card-text"> Price : <span style="color:gold;display:inline-block">${data["dish_price"]}</span></p>
+            <p class="card-text">Qunatity  <span style="color:gold;display:inline-block">: ${data["quantity"]}</span></p>
+  
             </div>
           </div>
+        </div>
             
             `
         }
@@ -41,3 +44,17 @@ function GetCurrentOrder(){
     })
 }
 GetCurrentOrder()
+
+
+{/* <div class="col col-lg-4" >
+<div class="card text-center" >
+<img src=${data["dish_image"]}>
+<div class="card-body">
+<h5 class="card-title">Category Name ${data["category_name"]} </h5>
+  <h5 class="card-title">Dish Name ${data["dish_name"]} </h5>
+  <p class="card-text">Dish Price : ${data["dish_price"]}</p>
+  <p class="card-text">Qunatity  : ${data["quantity"]}</p>
+
+  </div>
+</div>
+</div> */}

@@ -1,0 +1,15 @@
+body{
+    background-image: url('./hero-slider-1.jpg');
+    height: 100vh;
+}
+
+
+@media screen and (max-width: 995px) {
+.row{
+    flex-direction: column !important;
+}
+}
+
+#top{
+    height: 100vh !important;
+}
