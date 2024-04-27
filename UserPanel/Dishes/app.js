@@ -77,15 +77,7 @@ async function getDishes() {
         })
 }
 
-// arr-=[]
-// arr[0]
-// arr[2]
-// var data = {
-//     name:"jcjbcb"
-// }
 
-//local storage =>string
-//array 
 
 function AddToCard(e) {
     var checkData = localStorage.getItem("add_to_card")

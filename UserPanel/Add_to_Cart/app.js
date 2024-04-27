@@ -1,14 +1,16 @@
 var add_to_cart_div = document.getElementById("add_to_cart");
 var order_btn = document.getElementById("order-now");
-
+var small= document.getElementById("small");
 function getAllAddToCart() {
     var add_to_Cart = JSON.parse(localStorage.getItem("add_to_card")) || [];
     add_to_cart_div.innerHTML = "";
 
-    if (add_to_Cart.length >= 1) {
+    if (add_to_Cart.length >= 1) { 
         order_btn.style.display = "inline";
     } else {
         order_btn.style.display = "none";
+        small.style.height="20vh";
+        
     }
 
     add_to_Cart.forEach(function(item, index) {
@@ -75,4 +77,9 @@ if(localStorage.getItem("userId")==null){
     window.location.replace("../../Auth/index.html")
 
 
+}
+
+function logout(){
+    localStorage.clear()
+    window.location.replace("../../index.html")
 }

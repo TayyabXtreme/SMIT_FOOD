@@ -1,4 +1,4 @@
-console.log("order details")
+
 var orderkey = localStorage.getItem("current_order")
 var order_details = document.getElementById("order_details")
 var username = document.getElementById("name")
@@ -11,7 +11,7 @@ function GetCurrentOrder(){
     firebase.database().ref("userorders").child(userId).child(orderkey)
     .get()
     .then((snap)=>{
-        console.log(snap.val())
+        
         // username.innerText = "" + snap.val()["userName"]
         // price.innerText = "Total price : " + snap.val()["total_amount"]
         // statusoRDER.innerText = "Status " + snap.val()["status"]
@@ -49,4 +49,10 @@ if(localStorage.getItem("userId")==null){
   window.location.replace("../../Auth/index.html")
 
 
+}
+
+
+function logout(){
+  localStorage.clear()
+  window.location.replace("../../index.html")
 }

@@ -243,7 +243,7 @@ table, th, td {
 }
 
 thead th {
-    position: sticky;
+
     top: 0;
     left: 0;
     background-color: #d5d1defe;
@@ -285,10 +285,38 @@ tbody tr:hover {
     text-decoration: none;
     padding: 0 .5rem;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1024px) {
 	th:nth-child(6),td:nth-child(6) {
-		width: 150px;
+		width: 180px;
 	}
 	
 	
+}
+
+
+@media screen and (min-width: 980px) {
+	th:nth-child(6),td:nth-child(3) {
+		width: 250px;
+	}
+	
+	
+}
+
+@media screen and (max-width: 762px) {
+	.btn-warning{
+		font-size: 12px;
+		width: 30px;
+	}
+	.btn-danger{
+		font-size: 12px;
+		width: 30px;
+	}
+	
+	
+}
+
+@media screen and (max-width: 1024px) {
+	.main{
+		width: 90vw;
+	}
 }

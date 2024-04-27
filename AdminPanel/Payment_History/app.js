@@ -4,7 +4,16 @@ var amounttext = document.getElementById("amounttext")
 
 
 window.addEventListener('resize', function () {
-	if(this.innerWidth < 1224) {
+	if(this.innerWidth < 900) {
+		sidebar.classList.add('hide');
+	} else {
+		sidebar.classList.remove('hide');
+	}
+}
+)
+
+window.addEventListener('load', function () {
+	if(this.innerWidth < 900) {
 		sidebar.classList.add('hide');
 	} else {
 		sidebar.classList.remove('hide');

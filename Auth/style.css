@@ -197,10 +197,10 @@ header{
         top: -800px;
         display: flex;
         justify-content: center;
-        background: rgba(255, 255, 255, 0.2);
+        /* background: rgba(255, 255, 255, 0.2); */
         width: 100%;
         height: 90vh;
-        backdrop-filter: blur(20px);
+        /* backdrop-filter: blur(20px); */
         transition: .3s;
     }
     .nav-menu ul{
@@ -214,14 +214,12 @@ header{
         font-size: 25px;
         color: #fff;
         padding: 10px;
-        background: rgba(255, 255, 255, 0.2);
+       background: rgba(255, 255, 255, 0.2); 
         border-radius: 50%;
         cursor: pointer;
         transition: .3s;
     }
-    .nav-menu-btn i:hover{
-        background: rgba(255, 255, 255, 0.15);
-    }
+    
 }
 @media only screen and (max-width: 540px) {
     .wrapper{
@@ -239,4 +237,17 @@ header{
         flex-direction: column;
         gap: 0;
     }
+}
+
+.coloring{
+    padding: 0%;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.coloring:hover{
+    transition: 1s ease-in-out;
+    color: goldenrod !important;
+  
+    
 }

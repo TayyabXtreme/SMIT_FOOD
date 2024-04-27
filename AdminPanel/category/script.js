@@ -3,7 +3,16 @@ const sidebar = document.getElementById('sidebar');
 
 
 window.addEventListener('resize', function () {
-	if(this.innerWidth < 860) {
+	if(this.innerWidth < 980) {
+		sidebar.classList.add('hide');
+	} else {
+		sidebar.classList.remove('hide');
+	}
+}
+)
+
+window.addEventListener('load', function () {
+	if(this.innerWidth < 980) {
 		sidebar.classList.add('hide');
 	} else {
 		sidebar.classList.remove('hide');

@@ -183,7 +183,8 @@
     font-weight: var(--weight-regular);
     line-height: var(--lineHeight-5);
     overflow: hidden;
-    height: 200vh;
+    height: 100vh;
+    max-height: 250vh;
   }
   
   body.loaded { overflow: overlay; }
