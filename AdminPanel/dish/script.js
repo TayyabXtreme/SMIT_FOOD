@@ -247,5 +247,6 @@ async function updateDish() {
 
 
 function logout() {
+    localStorage.clear();
     window.location.href = "../../Auth/index.html"
 }

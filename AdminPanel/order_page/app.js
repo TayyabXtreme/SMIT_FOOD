@@ -79,7 +79,7 @@ async function order_Status_Update(e) {
 
   await firebase.database().ref("allorders").child(order_key)
     .get().then(async (snap) => {
-      console.log(snap.val())
+      //console.log(snap.val())
       if (order_status == "accept") {
         await firebase.database().ref("payments").child(order_key).update({
           "payment": newprice,
